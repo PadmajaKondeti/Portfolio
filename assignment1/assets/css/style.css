@@ -1,0 +1,218 @@
+* {
+	margin: 0px;
+}
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #efeee7; 
+	overflow: hidden;
+	line-height: 150%;
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.wrapper{	
+	width:960px;
+ 	margin: 0 auto;
+ 	height: 80px;
+}
+#main {
+	height: 90%;
+	overflow: auto;
+	border: #ddd 1px solid;
+	background-image: url('../images/ricepaper.png');
+}
+.main-header {
+	background: #ffffff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	/*width:960px;*/
+	color: #eee;
+	margin: 0 auto;
+	border-bottom: 1px solid #cccccc;
+}
+.main-header h1 {
+	height: 45px;
+    width: 40%;
+    float:left;
+    background: #4aaaa5;
+    text-align: center;
+	margin-top: 5px;
+	padding-top: 30px;
+}
+.main-header nav {
+    width: 50%;
+    position: relative;
+    padding: 30px 0; 
+    float:right;
+    text-align: right;
+}
+nav a:link { color: #666; }
+nav a:visited { color: #999; }
+nav a:hover { color: #4aaaa5; }
+nav a:active { 
+	background-color: #000;
+    color: #fff;
+    font-weight:bold;
+}
+nav a.active{
+	font-weight: bold;
+}
+nav a{
+	text-decoration: none;
+	padding-right: 10px;
+}
+nav a:after{
+    content: " |";
+    padding: 0 10px;
+}
+nav a:last-child:after {
+  content: '';
+}
+
+.container {
+ 	width:960px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	color:#777777;
+	height:inherit;
+}
+.container h3 {
+	font-size: 24px;
+	color:#4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	padding-bottom: 15px;
+}
+#main-bio,
+#contact-info,
+#bio-image {
+	float: left;
+	background: #fff;
+	padding:15px;
+}
+#main-bio {
+	width: 620px;
+	margin-right: 10px;
+	margin-top: 10px;
+	float: left;
+	border: 1px solid #ddd;
+	color: #777777;
+}
+#main-bio p{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+#contact-info {
+	width: 240px;
+	margin-top: 10px;
+	float:right;
+	border: 1px solid #ddd;
+}
+#bio-image {
+	margin-right: 20px;
+	vertical-align: text-top;
+}
+#contact-info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+ }
+#contact-info li{
+    display: inline;
+    padding:15px;
+}
+
+/* --- Specific to Contact form -- */
+#form-control{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.frm-elements{
+	border:1px solid #999;
+	width:98%;
+	padding: 15px 5px;
+}
+.submit{
+	background: #4aaaa5;
+	padding: 10px 25px;
+	color:#fff;
+	font-size: 12px;
+}
+/*--- Specific to Portfolio --*/
+.tbl-portfolio{
+	 margin: 0 auto;
+	 color:#fff;
+}
+.tbl-portfolio td {
+	width:320px;
+	margin-top: 25px;
+	padding-bottom: 15x;
+		/* padding-right: 15px; */
+}
+.img-portfolio{
+	/*width:280px; */
+}
+.portfolio{
+	position: relative;
+	left:0;
+	padding: 0;
+    width: 280px; /* for IE 6 */
+}
+.txt-overlay{
+	position: absolute;
+ 	padding:15px 0;
+   	text-align: center; 
+	width: 280px; 
+	color: #ffffff;
+	background: #4aaaa5;
+	z-index: 10;
+	top:70%;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+/* sticky footer */
+.container {
+	min-height: 100%;
+	margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+	height: 100px; /* '.push' must be the same height as 'footer' */
+}
+footer p{
+	margin-top: 35px;
+}
+.footer, .push {
+	clear: both;
+}
+.footer {
+  background-color: #666666;
+  color:#fff;
+  text-align: center;
+  border-top:  solid 5px #4aaaa5;
+  height: 10%;
+  font-size: x-small;
+}
+/* view port size 768 */
+@media only screen and (max-width: 768px) {
+ 	
+    #bio-image{
+    	width:300px;
+    	height:300px;
+    }
+    .wrapper{	
+		width:780px;
+	}
+	.container {
+		position: relative;
+	}
+	#main-bio {
+		width:100%;
+		border:1px solid #999;
+	}
+	#contact-info {
+		position: absolute;
+		width:100%;
+		bottom: 0;
+		border:1px solid #999;
+	}
+}
