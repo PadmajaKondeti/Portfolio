@@ -15,6 +15,7 @@ a.navbar-brand{
 ul.nav{
 	color:#6b4305;
 	font-size: 	1.5em;
+	z-index: auto;
 }
 li.active{
 	color: #6b4305;

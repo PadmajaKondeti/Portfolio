@@ -266,60 +266,68 @@ footer p{
 }
 /* view port size 640 */
 @media only screen and (max-width: 640px) {
-	body {
 
-}
-
-.main-header{
-	width:auto;
-	float:none;
-	margin:0 auto;
-	position:relative;
-	
-}
-.push1 {
-	height: 100px;}
-	.wrapper h1{
+	.main-header{
+		margin:0 auto;
+		position:relative;
 		width:auto;
-		float:none;
-		
-		
-	}
-	.wrapper nav{
-		width:auto;
-		float:none;
-		
+		background:#4aaaa5;
 		text-align: center;
+			
+		float:none;
+	}
+	.main-header h1{
+		position:absolute;	
+		float:none;
+		text-align: center;
+		margin:0 25%;
+		border:1px solid red;	
+	}
+	.main-header nav{
+		float:none;
+		position: absolute;
+		text-align: center;
+		margin-top:40px;
 		background: #fff;
 		border:1px solid #999;
-		z-index:2;
 		
-
+		margin:0;
+		border:1px solid red;
+		
 	} 
+	nav{
+		width:100%;
+	}
 	.container{
 		margin:0 auto;
 		width:90%;
 		position:relative;
-		
+		overflow: auto;
 	}
 	#main-bio{
-		overflow: hidden;
+		overflow: auto;
 		position: absolute;
 		width:80%;
 		margin-top:100px;
 		border:1px solid #999;
 		padding-top:15px;
+		margin-bottom:15px;
+		border:1px solid red;
 	}
  	#contact-info {
  		overflow: hidden;
 		position: absolute;
-		width:80%;
-		bottom: 0;
+		width:87%;
+	
 		border:1px solid #999;
-		padding-top:15px;
+		padding: 0px;
 		
-
 	}
 	.push{
-		display:none;}
+		display:none;
+	}
+	footer{
+		padding-top:20px;
+		
+	}
 }
