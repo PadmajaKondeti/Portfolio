@@ -232,7 +232,7 @@ footer p{
 
 	}
 	#contact-info {
-		position: absolute; 
+		position: relative; 
 		
 		bottom: 0;
 		padding-right: 41%;
