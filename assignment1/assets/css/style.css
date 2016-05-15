@@ -206,6 +206,7 @@ footer p{
 		margin-bottom: 20px;
 
 	}
+
 }
 /* view port size 768 */
 @media only screen and (max-width: 768px) {
@@ -222,11 +223,13 @@ footer p{
     
 	.container {
 		position: relative;
+
 	}
 	#main-bio {
 		/* width:100%; */
 		border:1px solid #999;
 		margin:10px;
+
 	}
 	#contact-info {
 		position: absolute; 
