@@ -231,8 +231,11 @@ footer p{
 		margin:10px;
 
 	}
+	.tbl-portfolio{
+		position: relative;
+	}
 	#contact-info {
-		position: relative; 
+		position: absolute; 
 		
 		bottom: 0;
 		padding-right: 41%;
